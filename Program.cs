@@ -16,7 +16,6 @@ namespace ChallengeOne
 
             Console.WriteLine("PFE Challenge !");
 
-            Console.ReadKey();
         }
 
         static string CallMethod<T>(T param)
