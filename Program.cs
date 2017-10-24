@@ -7,14 +7,16 @@ namespace ChallengeOne
     {
         static void Main(string[] args)
         {
-            var myObjectOne = new MyTypeTwo { Enabled = false, Name = "My First Object", Size = 4096 };
-            var myObjectTwo = new MyTypeOne { Enabled = true, Name = "My Second Object", Size = 4096 };
+            var myObjectOne = new MyTypeOne { Enabled = false, Name = "My First Object", Size = 4096 };
+            var myObjectTwo = new MyTypeTwo { Enabled = true, Name = "My Second Object", Size = 4096 };
 
             CallMethod(myObjectOne);
 
             CallMethod(myObjectTwo);
 
             Console.WriteLine("PFE Challenge !");
+
+            Console.ReadKey();
         }
 
         static string CallMethod<T>(T param)
